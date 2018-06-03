@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+html,body{margin:0;padding:0;overflow:hidden;background:rgba(26,26,28,0.99);}
+html{--shade:rgba(102,204,102,0.99)}
+#login{z-index:3;position:absolute;top:0;left:0;width:100%;height:100%;background:rgb(26,26,28);}
+#login button{width:20%;height:20%;position:absolute;left:40%;background:var(--shade);
+              border:0;outline:0;margin:0;padding:0;font-family:'Ubuntu Mono';font-size:300%;
+              color:rgba(36,36,38,0.99);-moz-user-select:none;user-select:none;border-radius:3%;}
+#newuse{position:absolute;top:25%;}
+#signin{position:absolute;top:55%;}
+#content{z-index:1;position:absolute;top:0;left:0;width:100%;height:100%;background:rgb(26,26,28);}
+.cell{position:absolute;width:15%;font-family:'Ubuntu Mono';border-radius:3%;
+      background:rgba(36,36,38,0.99);color:var(--shade);height:35%;}
+.cell::-moz-selection{background:var(--shade);
+                      color:rgba(36,36,38,0.99);}
+.cell::selection{background:var(--shade);
+                 color:rgba(36,36,38,0.99);}
+.cell p{margin:0;padding:0;font-weight:bold;}
+.cell p::-moz-selection{background:var(--shade);
+                        color:rgba(36,36,38,0.99);}
+.cell p::selection{background:var(--shade);
+                   color:rgba(36,36,38,0.99);}
+.completion{width:100%;height:90%;display:flex;align-items:center;justify-content:center;
+            font-size:300%;user-select:none;-moz-user-select:none;}
+#projec{top:10%;left:30%;}
+#school{top:10%;left:55%;}
+#person{top:10%;left:80%;}
+#confid{top:55%;left:30%;}
+#happin{top:55%;left:55%;}
+#settin{top:55%;left:80%;}
+.setting{float:left;width:100%;height:22.5%;background:rgba(36,36,38,0.99);resize:none;font-size:125%;
+         margin:0;padding:0;outline:0;border:0;color:var(--shade);font-family:'Ubuntu Mono';
+         overflow:hidden;text-align:center;}
+.setting::-moz-selection{background:var(--shade);color:rgba(36,36,38,0.99);}
+.setting::selection{background:var(--shade);color:rgba(36,36,38,0.99);}
