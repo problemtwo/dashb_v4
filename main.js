@@ -61,7 +61,6 @@ window.onload = () => {
 		if(e.keyCode === 13){
 			e.preventDefault();
 			profile.uname = g('#set-uname').value;
-			update();
 		}
 	}
 
@@ -69,7 +68,7 @@ window.onload = () => {
 		if(e.keyCode === 13){
 			e.preventDefault();
 			profile.color = g('#set-color').value;
-			update();
+			[...g('html')][0].style.setProperty('--shade',profile.color);
 		}
 	};
 
