@@ -77,7 +77,7 @@ window.onload = () => {
 		dateup();
 		const a = document.createElement('a');
 		a.setAttribute('href','data:text/plain;charset=utf-8,' + encodeURIComponent(JSON.stringify(profile)));	
-		a.setAttribute('download','profile.dasb4');
+		a.setAttribute('download',g('#set-dname').value || 'p.dashb4');
 		a.style.display = 'none';
 		document.body.appendChild(a);
 		a.click();
