@@ -13,7 +13,8 @@ window.onload = () => {
 	let shift = false;
 	let profile = {
 		'uname':'',
-		'color':''
+		'color':'',
+		'titles':[]
 	};
 
 	[...g('.completion')].forEach(v => {
@@ -47,14 +48,17 @@ window.onload = () => {
 	}
 
 	function update() {
-		g('#set-uname').value = profile.uname;
-		g('#set-color').value = profile.color;
+		g('#set-uname').value = profile.uname || '';
+		g('#set-color').value = profile.color || '';
+		let i=0;
+		[...g('.cell-title')].forEach(c => {c.value = profile.titles[i++] || '';});
 		[...g('html')][0].style.setProperty('--shade',profile.color);
 	}
 
 	function dateup() {
 		profile.uname = g('#set-uname').value;
 		profile.color = g('#set-color').value;
+		profile.titles = [...g('.cell-title')].map(v => v.value || '');
 	}
 
 	g('#set-uname').onkeydown = e => {
